@@ -33,6 +33,7 @@ public class Fabricante {
         Fabricante fabricante = null;
         for(Fabricante f : fabricantes){
             if (f.carrosFabricados > mayorVentas){
+                mayorVentas = f.carrosFabricados;
                 fabricante = f;
             }
         }

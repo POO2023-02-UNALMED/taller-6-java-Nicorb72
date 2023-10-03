@@ -32,6 +32,7 @@ public class Pais {
         Pais pais = null;
         for (Pais p: paises){
             if (p.getCarrosVendidos() > masVendedor){
+                masVendedor = p.getCarrosVendidos();
                 pais = p;
             }
         }
